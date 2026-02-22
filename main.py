@@ -59,7 +59,7 @@ while running:
             vy=(y2-y)*0.01
 
             carregando=False
-            lista_corpos.append(Corpo('Corpo_Celeste', x, y, vx, vy, massa_temp, raio_temp, 'white'))
+            lista_corpos.append(Corpo('Corpo_Celeste', x, y, vx, vy, massa_temp, raio_temp, random_cor()))
             massa_temp=1
             raio_temp=1
 
@@ -71,7 +71,7 @@ while running:
 
 
     for corpo in lista_corpos:
-        if corpo.raio>100:
+        if corpo.raio>150:
             buracos_negros.append(corpo)
 
 
@@ -129,7 +129,20 @@ while running:
         corpo.atualizar_vel(ax_tot, ay_tot)
 
     for i in lista_corpos:
+        """ if i.raio<10 and i.raio>5:
+            i.cor='blue'
+        elif (i.raio>=10 and i.raio<=50):
+            i.cor='orange'
+        elif(i.raio>50 and i.raio<=75):
+            i.cor='red'
+        elif(i.raio>75 and i.raio<=100):
+            i.cor=(193, 145, 0)
+        elif(i.raio>100):
+            i.cor='yellow' """
+        
         i.criar_Corpo(screen)
+
+    
 
     pygame.display.flip()
 

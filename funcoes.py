@@ -1,4 +1,11 @@
 import math
+import random
+
+random.randint(0,255)
+
+def random_cor():
+    cor=[random.randint(0,255), random.randint(0,255), random.randint(0,255)]
+    return cor
 
 #   Constante Gravitacional
 g=9
@@ -25,3 +32,5 @@ def gravitacao_Universal(m1, m2):
     ay1=forca_y/m1.massa
 
     return ax1, ay1
+
+
