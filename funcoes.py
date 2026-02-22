@@ -1,7 +1,7 @@
 import math
 
 #   Constante Gravitacional
-g=10
+g=9
 epsilon=100
 
 def distancia(m1,m2):

@@ -64,8 +64,8 @@ while running:
             raio_temp=1
 
     if carregando==True:
-        massa_temp+=0.2
-        raio_temp+=0.2
+        massa_temp+=0.1
+        raio_temp+=0.1
 
         pygame.draw.circle(screen,(100, 100, 100), (pos_click[0],pos_click[1]),raio_temp)
 
