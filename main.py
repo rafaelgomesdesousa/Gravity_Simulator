@@ -89,7 +89,7 @@ while running:
 
     if state==1:
         if carregando==True:
-            massa_temp+=1.015
+            massa_temp+=0.15
             raio_temp+=0.1
             print(massa_temp)
 

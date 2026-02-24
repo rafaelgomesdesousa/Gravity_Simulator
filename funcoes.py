@@ -44,7 +44,7 @@ def criar_botoes(screen, width, height, x, y, color, text):
 
     rect_botao_borda = pygame.Rect(x, y, width+2, height+2)
     pygame.draw.rect(screen, 'white', rect_botao_borda, width)
-    
+
     pygame.draw.rect(screen, color, rect_botao, width+2)
 
     fonte=pygame.font.Font(None, 32)
