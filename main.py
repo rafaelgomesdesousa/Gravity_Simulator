@@ -169,5 +169,5 @@ while running:
             i.criar_Corpo(screen)
 
     pygame.display.flip()
-
+    
 pygame.quit()

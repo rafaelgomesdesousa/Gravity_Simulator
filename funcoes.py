@@ -10,7 +10,7 @@ def random_cor():
     return cor
 
 #   Constante Gravitacional
-g=20
+g=21
 epsilon=100
 
 def distancia(m1,m2):
